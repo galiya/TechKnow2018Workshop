@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+    function precisionRound(number, precision) {
+        var factor = Math.pow(10, precision);
+        return Math.round(number * factor) / factor;
+    }
+
+
+    function readImage(element) {
+    var file = element.files[0];
+    var reader = new FileReader();
+    reader.onloadend = function() {
+    $.ajax({
+
+      url: "https://southcentralus.api.cognitive.microsoft.com/customvision/v1.1/Prediction/29045ad0-7e36-428c-991b-b003ea396074/image?iterationId=08b181bf-db3d-4c25-b029-2ae8b162a9ab",
+      data: reader.result,
+      processData: false,
+      contentType: "application/octet-streama",
+      headers: {
+        'Prediction-key': '359a7cea533e4250acc9d94acb6785d1'
+      },
+      type: 'POST',
+      success: function(response) {
+        var result = response["Predictions"];
+        
+        result.forEach(element => {
+          $( "#predictions" ).append('<div><h1><span class="label label-success label-bs">' + element.Tag + ": " + precisionRound(element.Probability, 4)*100 + '%' + '</span></h1></div>');
+        });
+      },
+      error: function(error) {
+        alert('error: ' + error);
+      }
+    });
+  }
+  reader.readAsArrayBuffer(file);
+}
+</script>
+
+<body>
+    <div class="container">
+
+        <!-- HEADER AND TODO COUNT -->
+        <div class="jumbotron text-center">
+            <h1>Artworks [AI] Application</h1>
+        </div>
+
+        <div id="fileUpload" class="row">
+            
+                <form>
+                  <input type="file" onchange="readImage(this)" class="btn btn-primary btn-lg" />
+                </form>  
+            
+        </div>
+        <div class="row">
+              <div id="predictions">
+
+              </div>    
+          </div>
+    </div>
+
