@@ -1,0 +1,10 @@
+C:\GitHub\TechKnow2018Workshop\Part2-ConsumeMLModel\ConsoleAppC#\solution\bin\Debug\netcoreapp2.0\ConsoleAppC#.deps.json
+C:\GitHub\TechKnow2018Workshop\Part2-ConsumeMLModel\ConsoleAppC#\solution\bin\Debug\netcoreapp2.0\ConsoleAppC#.runtimeconfig.json
+C:\GitHub\TechKnow2018Workshop\Part2-ConsumeMLModel\ConsoleAppC#\solution\bin\Debug\netcoreapp2.0\ConsoleAppC#.runtimeconfig.dev.json
+C:\GitHub\TechKnow2018Workshop\Part2-ConsumeMLModel\ConsoleAppC#\solution\bin\Debug\netcoreapp2.0\ConsoleAppC#.dll
+C:\GitHub\TechKnow2018Workshop\Part2-ConsumeMLModel\ConsoleAppC#\solution\bin\Debug\netcoreapp2.0\ConsoleAppC#.pdb
+C:\GitHub\TechKnow2018Workshop\Part2-ConsumeMLModel\ConsoleAppC#\solution\obj\Debug\netcoreapp2.0\ConsoleAppC#.csproj.CoreCompileInputs.cache
+C:\GitHub\TechKnow2018Workshop\Part2-ConsumeMLModel\ConsoleAppC#\solution\obj\Debug\netcoreapp2.0\ConsoleAppC#.AssemblyInfoInputs.cache
+C:\GitHub\TechKnow2018Workshop\Part2-ConsumeMLModel\ConsoleAppC#\solution\obj\Debug\netcoreapp2.0\ConsoleAppC#.AssemblyInfo.cs
+C:\GitHub\TechKnow2018Workshop\Part2-ConsumeMLModel\ConsoleAppC#\solution\obj\Debug\netcoreapp2.0\ConsoleAppC#.dll
+C:\GitHub\TechKnow2018Workshop\Part2-ConsumeMLModel\ConsoleAppC#\solution\obj\Debug\netcoreapp2.0\ConsoleAppC#.pdb
